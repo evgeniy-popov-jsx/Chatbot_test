@@ -66,7 +66,7 @@ button {
 
 .msg-bot {
     background-color: rgb(181, 180, 180);
-    max-width: max-content;
+    max-width: fit-content;
     border-radius: 0 18px 18px 18px;
     color: black;
     padding: 10px;
@@ -90,7 +90,7 @@ button {
     margin-bottom: 10px;
 }
 
-.chatbot__input {
+.chatbot__input form {
     display: flex;
     padding: 10px;
 }
