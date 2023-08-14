@@ -63,6 +63,11 @@ function sendMessage (evt) {
     let newMsg = document.createElement('div');
     let input = document.querySelector('input');
     newMsg.classList.add('msg-client');
+
+    if(!input.value){
+        return false;
+    }
+
     newMsg.textContent = `${input.value}`;
     container.appendChild(newMsg);
     scrollToBottom();
@@ -73,5 +78,3 @@ pizzaBtn.addEventListener('click', getPizza);
 alarmBtn.addEventListener('click', getAlarm);
 weatherBtn.addEventListener('click', getWeather);
 sendBtn.addEventListener('click', sendMessage);
-
-

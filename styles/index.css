@@ -2,8 +2,16 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --color-one: #b9036a;
+    --color-two: #ff1e1c;
+    --color-three: #ff6110;
+    --color-text: #ffffff;
+}
+
 body {
-    background-color: rgb(97, 51, 110);
+    background-image: linear-gradient(to left bottom, #e60081, #f00072, #f80061, #fd004f, #ff003c, #ff1a32, #ff2926, #ff3618, #ff4315, #ff4e13, #ff5811, #ff6110);
+    font-family: 'Poppins', sans-serif;
 }
 button {
     margin: 0;
@@ -22,7 +30,7 @@ button {
 .profile {
     display: inline-block;
     border-radius: 50%;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--color-text);
 }
 .profile i {
     font-size: 30px;
@@ -38,12 +46,13 @@ button {
     text-align: center;
 }
 .chatbot__container {
-    background-color: aliceblue;
+    background-color: var(--color-text);
     border-radius: 20px 20px 18px 18px;
+    margin: 10px;
 }
 .chatbot__header {
-    color: #ffffff;
-    background-color: rgb(128, 46, 125);
+    color: var(--color-text);
+    background-color: var(--color-one);
     border-radius: 16px 16px 0 0;
     padding: 15px 20px;
     
@@ -65,10 +74,10 @@ button {
 }
 
 .msg-bot {
-    background-color: rgb(181, 180, 180);
+    background-color: var(--color-one);
     max-width: fit-content;
     border-radius: 0 18px 18px 18px;
-    color: black;
+    color: var(--color-text);
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -77,8 +86,8 @@ button {
     flex-direction: column;
 }
 .msg-client {
-    background-color: rgb(137, 42, 116);
-    color: black;
+    background-color: var(--color-three);
+    color: var(--color-text);
     padding: 10px;
     border-radius: 18px 18px 0 18px;
     max-width: max-content;
@@ -86,8 +95,20 @@ button {
     margin-left: auto;
     margin-right: 0;
 }
-button {
+.btn {
+    background-color: var(--color-one);
+    border: 1px solid  var(--color-one);
+    width: 150px;
+    border-radius: 18px 18px 18px 18px;
+    color: var(--color-text);
+    text-align: start;
+    padding: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.btn:hover {
+    background-color: var(--color-three);
 }
 
 .chatbot__input form {
@@ -98,25 +119,19 @@ button {
 input {
     width: 80%;
     border: none;
+    border-radius: 12px;
     background-color:  aliceblue;
     padding: 5px 10px;
     margin-right: 10px;
 }
 .send {
-    width: 30px;
-    height: 30px;
-    margin-bottom: -18px;
-    border-radius: 50%;
-    background-color: aliceblue;
+    background-color: var(--color-text);
+    margin-bottom: -3px;
     border: none;
     font-weight: 600;
     cursor: pointer;
-    position: relative;
   }
 
 .send i {
-    position: absolute;
-    left: 0;
-    top: 0;
     font-size: 24px;
 }
