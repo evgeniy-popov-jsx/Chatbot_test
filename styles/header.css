@@ -1,0 +1,38 @@
+.chatbot__header {
+    padding: 15px 20px;
+    background-color: var(--color-main);
+    color: var(--color-text);
+    border-radius: 16px 16px 0 0;
+}
+.profile {
+    display: inline-block;
+    border: 1px solid var(--color-text);
+    border-radius: 50%;
+}
+.profile i {
+    font-size: 30px;
+    padding: 5px;
+}
+.profile__name {
+    display: inline-block;
+    text-align: center;
+}
+.status {
+    font-size: 12px;
+}
+.profile__status {
+    text-align: start;
+}
+.profile__status .status i {
+    text-align: center;
+    margin-right: 2px;
+    font-size: 9px;
+    color: rgb(24, 255, 24);
+}
+.chatbot__container {
+    position: relative;
+    margin: 10px;
+    border-radius: 20px 20px 18px 18px;
+    background-color: var(--color-text);
+    overflow: hidden;
+}

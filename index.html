@@ -8,10 +8,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
-    <script src="./script/chat-bot.js" defer></script>
-
+    <script src="./script/index.js" defer></script>
+    <link rel="icon" href="favicon.png">
     <title>Chatbot</title>
 </head>
 <body>
@@ -20,27 +20,32 @@
             <div class="chatbot__container ">
                 <div class="chatbot__header">
                     <div class="profile">
-                        <i class='bx bxs-bot'></i>
+                        <i class='bx bxs-cat'></i>
                     </div>
                     <div class="profile__name">
-                            ChatBot
+                            <div class="name">ChatBot</div>
                         <div class="profile__status">
-                            <i class='bx bxs-circle' ></i>
-                            Online
+                           <div class="status">
+                            <i class='bx bxs-circle'></i>Online</div>
                         </div>
                     </div>
                 </div>
                 <div class="chatbot__messages-container msg">
-                    <div class="msg-bot">Привет!<br>Что я могу для Вас сделать?</div>
-                    <button class="pizza btn">Закажи пиццу</button>
-                    <button class="alarm btn">Установи будильник</button>
-                    <button class="weather btn">Покажи погоду</button>
+                    <div class="msg-bot">Привет!<br>Что я могу для тебя сделать?<br><span>(Отправь "/m" для вызова меню)</span></div>
+                </div>
+                <div class="btn__container">
+                    <div class="close-btn">
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <button class="btn" id="goodLuck">Пожелать удачи</button>
+                    <button class="btn" id="support">Поддержать меня</button>
+                    <button class="btn" id="joke">Рассказать анекдот</button>
                 </div>
                 <div class="chatbot__input">
                     <form>
-                        <input type="text" placeholder="Введите свой вопрос..">
-                        <button class="send">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ff1e1c;"><path d="m21.426 11.095-17-8A.999.999 0 0 0 3.03 4.242L4.969 12 3.03 19.758a.998.998 0 0 0 1.396 1.147l17-8a1 1 0 0 0 0-1.81zM5.481 18.197l.839-3.357L12 12 6.32 9.16l-.839-3.357L18.651 12l-13.17 6.197z"></path></svg>
+                        <input type="text" placeholder="Введите свой вопрос...">
+                        <button class="send-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #75b3b3;"><path d="m21.426 11.095-17-8A.999.999 0 0 0 3.03 4.242L4.969 12 3.03 19.758a.998.998 0 0 0 1.396 1.147l17-8a1 1 0 0 0 0-1.81zM5.481 18.197l.839-3.357L12 12 6.32 9.16l-.839-3.357L18.651 12l-13.17 6.197z"></path></svg>
                         </button>
                     </form>
                 </div>
